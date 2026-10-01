@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครเรียน</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-header">
+        <div class="logo-header">
+            <img src="img/logo-kmutnb.png" alt="KMUTNB">
+        </div>
+        <div class="header-center">
+            <h2>ระบบรับสมัครนักศึกษาใหม่</h2>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="http://127.0.0.1:5500/in-home.html">หน้าแรก</a></li>
+            <li><a href="http://127.0.0.1:5500/apply.html" class="active">สมัครเรียน</a></li>
+            <li><a href="http://127.0.0.1:5500/in-course.html">คณะ / หลักสูตร</a></li>
+            <li><a href="http://127.0.0.1:5500/in-news.html">ข่าวประชาสัมพันธ์</a></li>
+            <li><a href="http://127.0.0.1:5500/in-contact.html">ติดต่อเรา</a></li>
+        </ul>
+    </nav>
+
+    <main class="apply-page">
+
+        <form class="apply-content">
+
+            <div class="apply-main">
+
+                <section class="apply-section">
+                    <h4>หลักฐานและเอกสารประกอบการสมัคร</h4>
+                    <div class="apply-grid cols-1">
+                        <label class="file-field">
+                            <span>แฟ้มสะสมผลาน.pdf</span>
+                            <input type="file" accept=".pdf">
+                        </label>
+                        <input type="text" placeholder="คะแนนสอบ T-GAT">
+                        <input type="text" placeholder="คะแนนสอบ T-PAT3">
+                        <input type="text" placeholder="คะแนนสอบวัดระดับภาษาอังกฤษ (IELTS, TOEFL)">
+                    </div>
+                </section>
+
+                 <section class="apply-section">
+                    <h4>เลือกคณะ-สาขา</h4>
+                    <div class="apply-grid cols-2">
+                        <select name="day">
+                            <option value="คณะเทคโนโลยีและการจัดการอุตสาหกรรม">คณะเทคโนโลยีและการจัดการอุตสาหกรรม</option>
+                            <option value="คณะอุตสาหกรรมเกษตรดิจิทัล">คณะอุตสาหกรรมเกษตรดิจิทัล</option>
+                            <option value="คณะบริหารธุรกิจและอุตสาหกรรมบริการ">คณะบริหารธุรกิจและอุตสาหกรรมบริการ</option>
+                        </select>
+                        <select name="month">
+                            <option value="-สาขาของคณะเทคโนโลยีและการจัดการอุตสาหกรรม-">--สาขาของคณะเทคโนโลยีและการจัดการอุตสาหกรรม--</option>
+                            <option value="เทคโนโลยีเครื่องกล">เทคโนโลยีเครื่องกล</option>
+                            <option value="เทคโนโลยีโยธาก่อสร้าง">เทคโนโลยีโยธาก่อสร้าง</option>
+                            <option value="เทคโนโลยีสารสนเทศ">เทคโนโลยีสารสนเทศ</option>
+                            <option value="วิศวกรรมเกษตร">วิศวกรรมเกษตร</option>
+                            <option value="วิศวกรรมสารสนเทศ">วิศวกรรมสารสนเทศ</option>
+                            <option value="วิศวกรรมอุตสาหการ">วิศวกรรมอุตสาหการ</option>
+                            <option value="-สาขาของคณะอุตสาหกรรมเกษตรดิจิทัล-">--สาขาของคณะอุตสาหกรรมเกษตรดิจิทัล--</option>
+                            <option value="เทคโนโลยีการอาหาร">เทคโนโลยีการอาหาร</option>
+                            <option value="นวัตกรรม">นวัตกรรม</option>
+                            <option value="-สาขาของคณะบริหารธุรกิจและอุตสาหกรรมบริการ-">--สาขาของคณะบริหารธุรกิจและอุตสาหกรรมบริการ--</option>
+                            <option value="บริหารธุรกิจ">บริหารธุรกิจ</option>
+                            <option value="การท่องเที่ยวและการโรงแรม">การท่องเที่ยวและการโรงแรม</option>
+                        </select>
+                    </div>
+                    <div class="apply-grid cols-2">
+                        <select name="day">
+                            <option value="คณะเทคโนโลยีและการจัดการอุตสาหกรรม">คณะเทคโนโลยีและการจัดการอุตสาหกรรม</option>
+                            <option value="คณะอุตสาหกรรมเกษตรดิจิทัล">คณะอุตสาหกรรมเกษตรดิจิทัล</option>
+                            <option value="คณะบริหารธุรกิจและอุตสาหกรรมบริการ">คณะบริหารธุรกิจและอุตสาหกรรมบริการ</option>
+                        </select>
+                        <select name="month">
+                            <option value="-สาขาของคณะเทคโนโลยีและการจัดการอุตสาหกรรม-">--สาขาของคณะเทคโนโลยีและการจัดการอุตสาหกรรม--</option>
+                            <option value="เทคโนโลยีเครื่องกล">เทคโนโลยีเครื่องกล</option>
+                            <option value="เทคโนโลยีโยธาก่อสร้าง">เทคโนโลยีโยธาก่อสร้าง</option>
+                            <option value="เทคโนโลยีสารสนเทศ">เทคโนโลยีสารสนเทศ</option>
+                            <option value="วิศวกรรมเกษตร">วิศวกรรมเกษตร</option>
+                            <option value="วิศวกรรมสารสนเทศ">วิศวกรรมสารสนเทศ</option>
+                            <option value="วิศวกรรมอุตสาหการ">วิศวกรรมอุตสาหการ</option>
+                            <option value="-สาขาของคณะอุตสาหกรรมเกษตรดิจิทัล-">--สาขาของคณะอุตสาหกรรมเกษตรดิจิทัล--</option>
+                            <option value="เทคโนโลยีการอาหาร">เทคโนโลยีการอาหาร</option>
+                            <option value="นวัตกรรม">นวัตกรรม</option>
+                            <option value="-สาขาของคณะบริหารธุรกิจและอุตสาหกรรมบริการ-">--สาขาของคณะบริหารธุรกิจและอุตสาหกรรมบริการ--</option>
+                            <option value="บริหารธุรกิจ">บริหารธุรกิจ</option>
+                            <option value="การท่องเที่ยวและการโรงแรม">การท่องเที่ยวและการโรงแรม</option>
+                        </select>
+                    </div>
+                    <div class="apply-grid cols-2">
+                        <select name="day">
+                            <option value="คณะเทคโนโลยีและการจัดการอุตสาหกรรม">คณะเทคโนโลยีและการจัดการอุตสาหกรรม</option>
+                            <option value="คณะอุตสาหกรรมเกษตรดิจิทัล">คณะอุตสาหกรรมเกษตรดิจิทัล</option>
+                            <option value="คณะบริหารธุรกิจและอุตสาหกรรมบริการ">คณะบริหารธุรกิจและอุตสาหกรรมบริการ</option>
+                        </select>
+                        <select name="month">
+                            <option value="-สาขาของคณะเทคโนโลยีและการจัดการอุตสาหกรรม-">--สาขาของคณะเทคโนโลยีและการจัดการอุตสาหกรรม--</option>
+                            <option value="เทคโนโลยีเครื่องกล">เทคโนโลยีเครื่องกล</option>
+                            <option value="เทคโนโลยีโยธาก่อสร้าง">เทคโนโลยีโยธาก่อสร้าง</option>
+                            <option value="เทคโนโลยีสารสนเทศ">เทคโนโลยีสารสนเทศ</option>
+                            <option value="วิศวกรรมเกษตร">วิศวกรรมเกษตร</option>
+                            <option value="วิศวกรรมสารสนเทศ">วิศวกรรมสารสนเทศ</option>
+                            <option value="วิศวกรรมอุตสาหการ">วิศวกรรมอุตสาหการ</option>
+                            <option value="-สาขาของคณะอุตสาหกรรมเกษตรดิจิทัล-">--สาขาของคณะอุตสาหกรรมเกษตรดิจิทัล--</option>
+                            <option value="เทคโนโลยีการอาหาร">เทคโนโลยีการอาหาร</option>
+                            <option value="นวัตกรรม">นวัตกรรม</option>
+                            <option value="-สาขาของคณะบริหารธุรกิจและอุตสาหกรรมบริการ-">--สาขาของคณะบริหารธุรกิจและอุตสาหกรรมบริการ--</option>
+                            <option value="บริหารธุรกิจ">บริหารธุรกิจ</option>
+                            <option value="การท่องเที่ยวและการโรงแรม">การท่องเที่ยวและการโรงแรม</option>
+                        </select>
+                    </div>
+                </section>
+                <div class="apply-submit">
+                    <button type="button" class="btn-send" onclick="location.href='confirm.html'">ถัดไป</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>ลิงค์ที่เกี่ยวข้อง</h4>
+                <ul>
+                    <li><a href="https://www.kmutnb.ac.th/" target="_blank">> มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</a></li>
+                    <li><a href="https://reg.kmutnb.ac.th/registrar/home" target="_blank">> ชำระเงิน/ขึ้นทะเบียนนักศึกษาใหม่</a></li>
+                    <li><a href="https://acdserv.kmutnb.ac.th/" target="_blank">> กองบริการการศึกษา</a></li>
+                    <li><a href="https://sa.op.kmutnb.ac.th/" target="_blank">> กองกิจการนักศึกษา</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>ติดต่อ</h4>
+                <p>กลุ่มงานรับเข้าศึกษา กองบริการการศึกษา สำนักงานอธิการบดี ชั้น 2 อาคาร TGGS</p>
+                <p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ 1518 ถนนประชาราษฎร์สาย 1 แขวงวงศ์สว่าง เขตบางซื่อ กรุงเทพมหานคร 10800</p>
+                <p>+66 2-555-2000 ต่อ 1626,1627</p>
+                <p>+66 2 555-2171</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>ติดตามเราได้ที่</h4>
+                <a href="https://www.facebook.com/admission.kmutnb" target="_blank">
+                    <img src="img/facebook-logo.png" alt="Facebook">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

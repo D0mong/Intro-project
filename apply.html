@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครเรียน</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-header">
+        <div class="logo-header">
+            <img src="img/logo-kmutnb.png" alt="KMUTNB">
+        </div>
+        <div class="header-center">
+            <h2>ระบบรับสมัครนักศึกษาใหม่</h2>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="http://127.0.0.1:5500/in-home.html">หน้าแรก</a></li>
+            <li><a href="http://127.0.0.1:5500/apply.html" class="active">สมัครเรียน</a></li>
+            <li><a href="http://127.0.0.1:5500/in-course.html">คณะ / หลักสูตร</a></li>
+            <li><a href="http://127.0.0.1:5500/in-news.html">ข่าวประชาสัมพันธ์</a></li>
+            <li><a href="http://127.0.0.1:5500/in-contact.html">ติดต่อเรา</a></li>
+        </ul>
+    </nav>
+
+    <main class="apply-page">
+
+        <form class="apply-content">
+            <div class="apply-photo">
+                <h4>รูปถ่าย ขนาด 1 นิ้ว</h4>
+                <label class="photo-box" for="photoUpload">
+                    <input type="file" id="photoUpload" accept="image/*">
+                </label>
+            </div>
+
+            <div class="apply-main">
+                <section class="apply-section">
+                    <h4>ข้อมูลส่วนตัวและข้อมูลการติดต่อ</h4>
+                        <div class="gender-group">
+                            <label class="radio-option">
+                                <input type="radio" name="gender" value="male"> ชาย
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="gender" value="female"> หญิง
+                            </label>
+                        </div>
+                    <div class="apply-grid cols-3">
+                        <input type="text" placeholder="ชื่อภาษาไทย">
+                        <input type="text" placeholder="นามสกุลภาษาไทย">
+                        <input type="text" placeholder="เลขบัตรประชาชน">
+                        <input type="text" placeholder="Firstname">
+                        <input type="text" placeholder="Lastname">
+                        <input type="tel" placeholder="เบอร์โทรศัพท์">
+                        <input type="email" placeholder="อีเมล">
+                    </div>
+                </section>
+
+                <section class="apply-section">
+                    <h4>วันเดือนปีเกิด</h4>
+                    <div class="apply-grid cols-3">
+                        <select name="day">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select name="month">
+                            <option value="1">มกราคม</option>
+                            <option value="2">กุมภาพันธ์</option>
+                            <option value="3">มีนาคม</option>
+                            <option value="4">เมษายน</option>
+                            <option value="5">พฤษภาคม</option>
+                            <option value="6">มิถุนายน</option>
+                            <option value="7">กรกฎาคม</option>
+                            <option value="8">สิงหาคม</option>
+                            <option value="9">กันยายน</option>
+                            <option value="10">ตุลาคม</option>
+                            <option value="11">พฤศจิกายน</option>
+                            <option value="12">ธันวาคม</option>
+                        </select>
+                        <select name="year">
+                            <option value="2549">2549</option>
+                            <option value="2550">2550</option>
+                            <option value="2551">2551</option>
+                            <option value="2552">2552</option>
+                            <option value="2553">2553</option>
+                            <option value="2554">2554</option>
+                            <option value="2555">2555</option>
+                            <option value="2556">2556</option>
+                            <option value="2557">2557</option>
+                        </select>
+                    </div>
+                </section>
+
+                <section class="apply-section">
+                    <h4>ข้อมูลและเอกสารทางการศึกษา</h4>
+                    <div class="apply-grid cols-3">
+                        <input type="text" placeholder="ชื่อสถาบันเดิม">
+                        <input type="text" placeholder="วุฒิที่สำเร็จการศึกษา">
+                        <input type="text" placeholder="เกรดเฉลี่ย">
+                    </div>
+                </section>
+
+                <section class="apply-section">
+                    <h4>หลักฐานและเอกสารประกอบการสมัคร</h4>
+                    <div class="apply-grid cols-1">
+                        <label class="file-field">
+                            <span>สำเนาบัตรประจำตัวประชาชน.pdf</span>
+                            <input type="file" accept=".pdf">
+                        </label>
+                        <label class="file-field">
+                            <span>ทะเบียนบ้าน.pdf</span>
+                            <input type="file" accept=".pdf">
+                        </label>
+                        <label class="file-field">
+                            <span>ปพ.1.pdf</span>
+                            <input type="file" accept=".pdf">
+                        </label>
+                    </div>
+                </section>
+
+                <div class="apply-submit">
+                    <button type="button" class="btn-send" onclick="location.href='apply2.html'">ถัดไป</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>ลิงค์ที่เกี่ยวข้อง</h4>
+                <ul>
+                    <li><a href="https://www.kmutnb.ac.th/" target="_blank">> มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</a></li>
+                    <li><a href="https://reg.kmutnb.ac.th/registrar/home" target="_blank">> ชำระเงิน/ขึ้นทะเบียนนักศึกษาใหม่</a></li>
+                    <li><a href="https://acdserv.kmutnb.ac.th/" target="_blank">> กองบริการการศึกษา</a></li>
+                    <li><a href="https://sa.op.kmutnb.ac.th/" target="_blank">> กองกิจการนักศึกษา</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>ติดต่อ</h4>
+                <p>กลุ่มงานรับเข้าศึกษา กองบริการการศึกษา สำนักงานอธิการบดี ชั้น 2 อาคาร TGGS</p>
+                <p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ 1518 ถนนประชาราษฎร์สาย 1 แขวงวงศ์สว่าง เขตบางซื่อ กรุงเทพมหานคร 10800</p>
+                <p>+66 2-555-2000 ต่อ 1626,1627</p>
+                <p>+66 2 555-2171</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>ติดตามเราได้ที่</h4>
+                <a href="https://www.facebook.com/admission.kmutnb" target="_blank">
+                    <img src="img/facebook-logo.png" alt="Facebook">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
